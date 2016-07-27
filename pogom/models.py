@@ -235,7 +235,7 @@ def parse_map(map_dict, iteration_num, step, step_location):
                                 f['last_modified_timestamp_ms'] / 1000.0),
                             'lure_expiration': lure_expiration,
                             'active_pokemon_id': active_pokemon_id
-                    }
+                        }
 
                 else:  # Currently, there are only stops and gyms
                     gyms[f['id']] = {
