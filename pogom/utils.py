@@ -57,6 +57,10 @@ def get_args():
     parser.add_argument('-C', '--cors', help='Enable CORS on web server', action='store_true', default=False)
     parser.add_argument('-D', '--db', help='Database filename', default='pogom.db')
     parser.add_argument('-t', '--threads', help='Number of search threads', required=False, type=int, default=5, dest='num_threads')
+    parser.add_argument('-dh', '--database-host', help='Databasae Hostname', required=False)
+    parser.add_argument('-du', '--database-user', help='Databasae Username', required=False)
+    parser.add_argument('-dp', '--database-pass', help='Databasae Password', required=False)
+
     parser.set_defaults(DEBUG=False)
     args = parser.parse_args()
 
